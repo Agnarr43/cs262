@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 export const globalStyles = StyleSheet.create({
   titleText: {
     fontSize: 18,
+    fontFamily: 'nunito-bold',
     fontWeight: 'bold',
     color: '#333',
   },
