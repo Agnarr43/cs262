@@ -1,0 +1,1 @@
+This sample Monopoly database and set of queries is used in Calvin College CS 262 lab 7.
