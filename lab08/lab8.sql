@@ -6,13 +6,7 @@ ORDER BY time DESC
 -- 1b
 SELECT *
 FROM Game
-WHERE time LIKE '%2020-10-23%'
-OR time LIKE '%2020-10-22%'
-OR time LIKE '%2020-10-21%'
-OR time LIKE '%2020-10-20%'
-OR time LIKE '%2020-10-19%'
-OR time LIKE '%2020-10-18%'
-OR time LIKE '%2020-10-17%'
+WHERE time >= '2020-10-17'
 ;
 -- 1c
 SELECT *
