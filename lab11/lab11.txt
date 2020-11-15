@@ -1,0 +1,5 @@
+- I deleted the "Alert" import from userTimes.js because it's not being used
+- VS Code has a format shortcut, SHIFT+ALT+F, but however it's auto-configured it sucks
+    - It split up each import into it's own 3-line long thing
+    - It also just made tons of newlines and indents, some of which actually broke the code and syntax rules
+- I scanned through some of the other files, checking for unused variables. I made notes of them but didn't delete them because the github merges might get funky
