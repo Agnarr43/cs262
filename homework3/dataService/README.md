@@ -1,22 +1,19 @@
 # CS 262 Monopoly Webservice
 
-This is the data service application for the [CS 262 sample Monopoly project](https://github.com/calvin-cs262-organization/monopoly-project) 
+This is the data service application for the [CS 262 homework 3]
 and it is deployed here:
           
-<https://cs262-monopoly-service.herokuapp.com/>
+<https://cs262-lab09.herokuapp.com/>
 
 It is based on the standard Heroku with Node.js tutorial.
 
 <https://devcenter.heroku.com/articles/getting-started-with-nodejs>  
 
-The database is relational with the schema specified in the `sql/` sub-directory,
- and is hosted on [ElephantSQL](https://www.elephantsql.com/). The database user
-and password are stored as Heroku configuration variables rather than in this (public) repo.
-
-We implement this sample as a separate repo to simplify Heroku integration, but 
-for lab 9, you can simply submit your code under the standard `cs262/lab09` directory. 
-For the team project, configure your Heroku app to auto-deploy the code from the
-master/main branch of your
-service repo; do this by following the instructions under the &ldquo;Deploy&rdquo; 
-tab in your application in the Heroku dashboard.
- 
+Lab Questions:
+a. All the ones from lab09, plus cs262-lab09.herokuapp.com/dogbreathScores and cs262-lab09.herokuapp.com/dogbreathScores/:gameid
+b. These are idempotent and nullipotent
+c. Yes;
+- It's stateless
+- The client and server are separated
+- I think heroku is caching some stuff, queries take less time the 2nd time I run them
+d. I don't think so, the only potential thing is that the objects returned dont have an "id" field, they have a "gameid" field, so some code in the gamezone had to be changed.
